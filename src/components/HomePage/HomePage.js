@@ -37,7 +37,7 @@ function HomePage() {
             className="room-id-input"
             placeholder="Generated Room ID"
             value={roomId}
-            readOnly
+            onChange={(e) => setRoomId(e.target.value)}
           />
           <button className="generate-button" onClick={handleRoomIdGenerate}>
             Generate
